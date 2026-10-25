@@ -1,0 +1,18 @@
+@metaxia/scriptures-source-stepbible-tahot
+
+This package includes data from STEPBible.org:
+
+  TAHOT - Translators Amalgamated Hebrew OT
+  Data created by www.STEPBible.org based on work at Tyndale House Cambridge,
+  licensed under the Creative Commons Attribution 4.0 International License
+  (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+  Source: https://github.com/STEPBible/STEPBible-Data
+  (commit be4191f0082aeedddb0eff0c02c966292b2bd641)
+
+  augmented_strongs.txt (Hebrew entries), from the STEPBible software
+  Copyright (c) 2012, STEPBible. BSD 3-Clause License (see LICENSE).
+  Source: https://github.com/STEPBible/step
+  (commit 5ffb379899d76aafca4bb505bf160fe09c39684c)
+
+Changes: the tab-separated files are converted to JSON (see LICENSE for the
+details). No word or entry is removed or edited.

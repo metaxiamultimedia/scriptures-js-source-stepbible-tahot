@@ -1,0 +1,57 @@
+{
+  "name": "@metaxia/scriptures-source-stepbible-tahot",
+  "version": "1.0.0",
+  "description": "Tagged Hebrew Old Testament data from STEPBible TAHOT for @metaxia/scriptures. Every OT word with its disambiguated Strong's tags.",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./data/*": "./data/*"
+  },
+  "files": [
+    "dist",
+    "data",
+    "NOTICE"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "import": "tsx scripts/import.ts",
+    "test": "vitest run",
+    "clean": "rm -rf dist data"
+  },
+  "keywords": [
+    "bible",
+    "hebrew",
+    "old-testament",
+    "strongs",
+    "dstrong",
+    "tahot",
+    "stepbible",
+    "scriptures"
+  ],
+  "author": "Benjamin Plunkert",
+  "license": "(MIT AND CC-BY-4.0 AND BSD-3-Clause)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metaxiamultimedia/scriptures-js-source-stepbible-tahot"
+  },
+  "bugs": {
+    "url": "https://github.com/metaxiamultimedia/scriptures-js-source-stepbible-tahot/issues"
+  },
+  "homepage": "https://github.com/metaxiamultimedia/scriptures-js-source-stepbible-tahot#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "vitest": "^4.0.0"
+  }
+}
